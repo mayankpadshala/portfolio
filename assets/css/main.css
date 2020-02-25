@@ -367,6 +367,9 @@ p {
     margin-right: 15px;
     border-radius: 3px;
 }
+.btn-one-addon {
+    margin-right:0px;
+}
 .btn-one:hover{
     background: #444 ;
     border: 2px solid #444 ;
@@ -1307,6 +1310,10 @@ body {
     border-radius: 30px;
     margin-bottom: 0;
     padding-left: 0;
+}
+
+.portfolio-ul li{
+    list-style: disc !important;
 }
 
 .list-control li {
