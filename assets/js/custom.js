@@ -7,10 +7,10 @@ $(document).ready(function () {
     var win = $(window),
         navbar = $('.navbar'),
         scrollUp = $(".scroll-up");
-    
 
-    
-    
+
+
+
     /*========== Start Navbar Auto Change  ==========*/
     win.on('scroll', function () {
         if (win.scrollTop() > 50) {
@@ -21,28 +21,34 @@ $(document).ready(function () {
     });
 
     /*========== Start Scroll For Navigation Menu ==========*/
-    navbar.on('click', 'a', function (e) {
+    $('.navbar-brand-link').on('click', 'a', function (e) {
         e.preventDefault();
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 82
+            scrollTop: $($anchor.attr('href')).offset().top + 10
         }, 1000);
     });
 
-    /*========== Start Scroll For Link To Go Section  ==========*/
-    $('.down').on('click', function (e) {
+    $('.nav-item').on('click', 'a', function (e) {
         e.preventDefault();
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 82
+            scrollTop: $($anchor.attr('href')).offset().top + 10
         }, 1000);
     });
-    
-    
+
+    $('#portfolio-btn').on('click', 'a', function (e) {
+        e.preventDefault();
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
+    });
+
     // Sync Navbar Links With Section
     $('body').scrollspy({
         target: '#navtoggler',
-        offset: 82
+        offset: 0
     });
     //// COLLAPSED MENU CLOSE ON CLICK
     navbar.on('click', '.navbar-collapse', function (e) {
@@ -51,23 +57,14 @@ $(document).ready(function () {
         }
     });
 
-    /*========== Start Counter To Js Statistics   ==========*/
-    win.on('scroll.statistics', function () {
-        var stat = $('.statistics');
-        if ($(this).scrollTop() >= stat.offset().top - win.height() + 220) {
-            $('.count').countTo();
-            win.off('scroll.statistics');
-        }
-    });
-    
-    
+
     /*========== Start Portfolio Trigger Filterizr Js ==========*/
     $("#control li").on('click', function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
     // The Filterizr
     $('#filtr-container').filterizr({
-        animationDuration: 0.4
+        animationDuration: 0.6
     });
 
     /*========== Start Magnigic Popup Js ==========*/
@@ -79,10 +76,10 @@ $(document).ready(function () {
         }
     });
 
-    
-    
-    
-    
+
+
+
+
     /*========== Start OWL Carousel Js testimonial   ==========*/
     $('.testimonial').owlCarousel({
         loop: true,
@@ -91,22 +88,22 @@ $(document).ready(function () {
         nav: true,
         navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
         responsive: {
-			0: {
-				items: 1
-			},
-			600: {
-				items: 1
-			},
-			700: {
-				items: 1
-			},
-			1000: {
-				items: 2
-			}
-		}
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            700: {
+                items: 1
+            },
+            1000: {
+                items: 2
+            }
+        }
     });
-    
-     /*========== Start OWL Carousel Js sponsor   ==========*/
+
+    /*========== Start OWL Carousel Js sponsor   ==========*/
     $('.sponsor').owlCarousel({
         loop: true,
         margin: 30,
@@ -124,9 +121,9 @@ $(document).ready(function () {
             }
         }
     });
-    
-    
-    
+
+
+
     function animateProgressBar() {
         $('.skill-box .progress-line > span').each(function () {
             var percent = $(this).data('percent');
@@ -137,17 +134,15 @@ $(document).ready(function () {
         });
     }
 
-    $(window).on('scroll', function () {
-        if ($(window).scrollTop() > $('.about').offset().top + 200) {
-            animateProgressBar();
-        }
-    });
-    if ($(window).scrollTop() > $('.about').offset().top + 200) {
-        animateProgressBar();
-    }
-    
-    
-    
+    // $(window).on('scroll', function () {
+    //     if ($(window).scrollTop() > $('.about').offset().top + 200) {
+    //         animateProgressBar();
+    //     }
+    // });
+    // if ($(window).scrollTop() > $('.about').offset().top + 200) {
+    //     animateProgressBar();
+    // }
+
 
 
     /*========== Start Scroll Up    ==========*/
@@ -161,9 +156,9 @@ $(document).ready(function () {
     });
     // Back To 0 Scroll Top body
     scrollUp.on('click', function () {
-        $("html, body").animate({ scrollTop: 0}, 1000);
+        $("html, body").animate({ scrollTop: 0 }, 1000);
     });
-  
+
 
 
 });

@@ -43,22 +43,12 @@
      ====================================================================-->
   <!-- All Plugins -->
   <!--  jQuery js  -->
-  <script src="assets/js/jquery-3.2.1.min.js"></script>
-  <!-- Popper Js  -->
-  <script src="assets/js/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Bootstrap 4 Js  -->
-  <script src="assets/js/bootstrap.min.js"></script>
-  <!-- OWL Carousel JS  -->
-  <!-- OWL Carousel JS  -->
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <!-- filterizr JS file -->
-  <script src="assets/js/jquery.filterizr.js"></script>
-  <!-- Magnific Popup JS  -->
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <!-- Counter To JS  -->
-  <script src="assets/js/jquery.countTo.js"></script>
-  <!--  WOW Js  -->
-  <script src="assets/js/wow.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
   <!-- Script Font Awesome 5 -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <!-- My Custom Js  -->
@@ -73,9 +63,11 @@
     <!-- Container -->
     <div class="container">
       <!-- My Logo -->
-      <a href="index.html" class="navbar-brand">Mayank Padshala
-        <!-- <span class="brand-bg"></span> -->
-      </a>
+      <div class="navbar-brand-link">
+        <a href="#home" class="navbar-brand">Mayank Padshala
+          <!-- <span class="brand-bg"></span> -->
+        </a>
+      </div>
       <!-- Button Menu -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtoggler"
         aria-controls="navtoggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,7 +79,7 @@
       <div class="collapse navbar-collapse" id="navtoggler">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -99,10 +91,10 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-        <!-- 
+
         <ul class="social-media-nav">
           <li>
-            <a href="#social" target="none"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/mayank-padshala" target="none"><i class="fab fa-linkedin"></i></a>
           </li>
           <li>
             <a href="https://join.skype.com/invite/BwQy892yLUd3" target="none"><i class="fab fa-skype"></i></a>
@@ -110,8 +102,8 @@
           <li>
             <a href="https://github.com/mayankpadshala" target="none"><i class="fab fa-github"></i></a>
           </li>
-        </ul> 
-      -->
+        </ul>
+
       </div>
     </div>
     <!-- Container -->
@@ -144,7 +136,7 @@
             	-->
 
           <!-- Button Banner -->
-          <div class="banner-btn">
+          <div id="portfolio-btn" class="banner-btn">
             <a href="#resume" class="btn-one">My Portfolio</a>
           </div>
 
@@ -166,7 +158,7 @@
   <section id="about" class="about ptb-100">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <div class="about-img">
             <div class="box-img">
               <img src="assets/images/about/about.jpg" alt="About-me" />
@@ -174,7 +166,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <div class="info-about">
             <!-- Title Of Section Left -->
             <div class="section-title-left">
@@ -185,18 +177,18 @@
               </h3>
             </div>
 
-            <p class="mb-10">
+            <p class="mb-10 align-justify">
               I am an aspiring software developer, looking for an oppurtunity.
-              My expertise as a software developer are in java and python and
-              would like to extend my knowledge in a similar domain.
+              My expertise lies in javascript, python and c languages,
+              and thus would like to showcase my knowledge in a similar domain.
             </p>
 
-            <p class="mb-30">
-              Hard work and Active time management are my core strengths. I
-              believe in "Ever Positive, Never Negative". I am Innovative,
-              Resourceful and Adaptable. I can generate optimal results with a
-              positive work ethic and I aspire to continually deliver desired
+            <p class="mb-30 align-justify">
+              Hard work and active time management are my core strengths.
+              My belief lies in the phrase "Ever Positive, Never Negative".
+              I have an innovative, resourceful and adaptable personality and am confidant in generating optimal
               results.
+              I assure you sigificant results along with a positive work ethic.
             </p>
 
             <div class="profile">
@@ -217,9 +209,6 @@
                   <p>Address: <span>Milpitas, CA, USA</span></p>
                 </div>
 
-                <div class="col-md-6">
-                  <p>Freelance: <span>Available</span></p>
-                </div>
                 <!-- 
                             <div class="col-md-6">
                                 <p>Nationality: <span>American</span></p>
@@ -265,34 +254,34 @@
           </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="info-skills">
             <div class="skills">
               <div class="skill-box">
-                <h4 class="skill-title">Data Structures and Algorithms</h4>
+                <h4 class="skill-title">C</h4>
                 <!-- <div class="progress-line">
                   <span data-percent="80" style="width: 80%; transition: width 1.5s linear 4s;"><span
                       class="percent-tooltip">80%</span></span>
                 </div> -->
               </div>
               <div class="skill-box">
-                <h4 class="skill-title">C</h4>
-              </div>
-
-              <div class="skill-box">
                 <h4 class="skill-title">Python</h4>
               </div>
+
               <div class="skill-box">
                 <h4 class="skill-title">JavaScript</h4>
               </div>
               <div class="skill-box">
                 <h4 class="skill-title">Java</h4>
               </div>
+              <div class="skill-box">
+                <h4 class="skill-title">PHP</h4>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="info-skills">
             <div class="skills">
               <div class="skill-box">
@@ -303,19 +292,45 @@
               </div>
 
               <div class="skill-box">
-                <h4 class="skill-title">PHP & MysQL</h4>
+                <h4 class="skill-title">MongoDB, Express, React, NodeJS</h4>
+              </div>
+              <div class="skill-box">
+                <h4 class="skill-title">Redux, GraphQL, MySQL</h4>
+              </div>
+
+              <div class="skill-box">
+                <h4 class="skill-title">AWS (EB, EC2, LB, IAM, S3, Redshift)</h4>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="info-skills">
+            <div class="skills">
+              <div class="skill-box">
+                <h4 class="skill-title">Data Structures and Algorithms</h4>
               </div>
               <div class="skill-box">
                 <h4 class="skill-title">Object Oriented Programming</h4>
               </div>
 
               <div class="skill-box">
-                <h4 class="skill-title">Design and Creativity</h4>
+                <h4 class="skill-title">Bash</h4>
+              </div>
+              <div class="skill-box">
+                <h4 class="skill-title">Machine Learning</h4>
+              </div>
+
+              <div class="skill-box">
+                <h4 class="skill-title">Git, SVN, Postman, Junit, Jmeter, Mocha</h4>
               </div>
 
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -350,15 +365,17 @@
 
               <div class="resume-footer portfolio-ul">
                 <ul class="portfolio-ul">
-                  <li>Developed a production level Windows CLI that sends NVMe commands to the
-                    world’s first windows
-                    NVMe-oF driver.</li>
-                  <li>Implemented a windows installer that installs the first NVMe-oF Subsystem.</li>
-                  <li>Automated server setup using system services which reduced deployment time of pavilion hyper
-                    parallel flash array by
-                    80%.</li>
-                  <li>Developed a user interface to fetch and visualize storage system data.</li>
-                  <li><b>Technologies /Tools:</b> C, Visual Studio, Rest API, Bash, Linux System Services.</li>
+                  <li>Designed and developed complete command line interface to interact with NVMe-over-Fabrics
+                    subsystem for Windows.</li>
+                  <li>Created NVMe-over-Fabrics subsystem library to send ioctl to the underlying Windows NVMeoF driver.
+                  </li>
+                  <li>Developed a user interface to fetch and visualize data from the connected NVMeoF
+                    device.</li>
+                  <li>Implemented a windows installer that installs the first NVMe-oF Subsystem, i.e driver, cli and
+                    User Interface.</li>
+                  <li>Automated server side setup using system services, which reduced Pavilion Hyperparallel Flash
+                    Array deployment time by 80%.</li>
+                  <li><b>Technologies /Tools:</b> Python, C, Visual Studio, Rest API, Bash, Linux System Services.</li>
                 </ul>
               </div>
               <!-- 
@@ -366,6 +383,31 @@
                 <img src="assets/images/about/edication.jpg" alt="my-history" />
               </div> 
               -->
+            </div>
+
+            <div class="history-top">Jan 2019 - Present</div>
+            <div class="resume-item">
+              <div class="resume-head">
+                <span class="icon-exp"><i class=" fa fa-briefcase"></i></span>
+                <div class="content-exper">
+                  <h4>Graduate Teaching Assistant</h4>
+                  <div class="history">San Jose State University | San Jose, CA</div>
+                  <div class="icon-bg"><i class="fa fa-briefcase"></i></div>
+                </div>
+              </div>
+
+              <div class="resume-footer">
+                <ul class="portfolio-ul">
+                  <li>Taught an introductory couse on python. Created course contents, designed course project and
+                    assignments for students.</li>
+                  <li>Taught linear regression and its implementation in python.</li>
+                  <li>Helped students make a Decision Support System as their class project using pandas and tkinter
+                    library.</li>
+                  <li><b>Technologies /Tools:</b> Python, Tkinter library, pandas library, pycharm.</li>
+                  </br>
+                </ul>
+
+              </div>
             </div>
 
             <div class="history-top">Oct 2018 - Dec 2018</div>
@@ -409,6 +451,7 @@
                   <li>It also allows to schedule a meeting with any member in the company and allows user to view the
                     scheduled meetings.</li>
                   <li><b>Technologies /Tools:</b> ReactJS/Redux, NodeJS, MySQL, VS Code, Git.</li>
+                  </br>
                 </ul>
 
               </div>
@@ -422,11 +465,11 @@
             <div class="history-top">Spring 2019</div>
             <div class="resume-item">
               <div class="resume-head">
-                <span class="icon-exp"><i class=" fa fa-briefcase"></i></span>
+                <span class="icon-exp"><i class=" fa fa-book"></i></span>
                 <div class="content-exper">
                   <h4>Quora Prototype</h4>
                   <div class="history">MERN Stack</div>
-                  <div class="icon-bg"><i class="fa fa-briefcase"></i></div>
+                  <div class="icon-bg"><i class="fa fa-book"></i></div>
                 </div>
               </div>
 
@@ -446,11 +489,11 @@
             <div class="history-top">Summer 2019</div>
             <div class="resume-item">
               <div class="resume-head">
-                <span class="icon-exp"><i class=" fa fa-briefcase"></i></span>
+                <span class="icon-exp"><i class=" fa fa-book"></i></span>
                 <div class="content-exper">
                   <h4>Prototype of Canvas application</h4>
                   <div class="history">MERN Stack</div>
-                  <div class="icon-bg"><i class="fa fa-briefcase"></i></div>
+                  <div class="icon-bg"><i class="fa fa-book"></i></div>
                 </div>
               </div>
 
@@ -472,11 +515,11 @@
             <div class="history-top">Fall 2018</div>
             <div class="resume-item">
               <div class="resume-head">
-                <span class="icon-exp"><i class=" fa fa-briefcase"></i></span>
+                <span class="icon-exp"><i class=" fa fa-book"></i></span>
                 <div class="content-exper">
                   <h4>Cross-Domain Enterprise Online Marketplace</h4>
                   <div class="history">HTML5 | CSS3 | PHP | Apache Server | MySQL</div>
-                  <div class="icon-bg"><i class="fa fa-briefcase"></i></div>
+                  <div class="icon-bg"><i class="fa fa-book"></i></div>
                 </div>
               </div>
 
@@ -496,11 +539,11 @@
             <div class="history-top">Fall 2018</div>
             <div class="resume-item">
               <div class="resume-head">
-                <span class="icon-exp"><i class=" fa fa-briefcase"></i></span>
+                <span class="icon-exp"><i class=" fa fa-book"></i></span>
                 <div class="content-exper">
                   <h4>AI-based Application Testing</h4>
                   <div class="history">Python | Java | AI Testing</div>
-                  <div class="icon-bg"><i class="fa fa-briefcase"></i></div>
+                  <div class="icon-bg"><i class="fa fa-book"></i></div>
                 </div>
               </div>
 
@@ -707,6 +750,7 @@
 	=====================================================================-->
   <footer class="footer" id="social">
     <div class="container">
+      </br>
       <ul class="social-media text-center">
         <li>
           <a href="https://www.linkedin.com/in/mayank-padshala" target="none"><i class="fab fa-linkedin"></i></a>
@@ -723,20 +767,12 @@
       </ul>
       <!-- Copyright By Me NourEgy  -->
       <div class="copyright text-center">
+        </br>
         &copy; 2020 Mayank Padshala
         <!-- <a href="#" target="_blank">NourEgy</a> -->
       </div>
     </div>
   </footer>
-  <!--==================================================================== 
-							End Footer
-	=====================================================================-->
-  <!-- Scroll To Top -->
-  <div class="scroll-up">
-    <span class="top-one"></span>
-    <span class="top-two">Top</span>
-    <span class="top-three"></span>
-  </div>
   <!--==================================================================== 
 							End Section Content
 	=====================================================================-->
